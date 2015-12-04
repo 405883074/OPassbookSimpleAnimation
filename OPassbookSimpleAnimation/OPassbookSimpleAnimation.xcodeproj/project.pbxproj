@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3353B3DEFF0499B970D8B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C544C96DD590173C9B50951F /* libPods.a */; };
 		793468161C114FAA00F1F2A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 793468151C114FAA00F1F2A4 /* main.m */; };
 		793468191C114FAA00F1F2A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 793468181C114FAA00F1F2A4 /* AppDelegate.m */; };
 		7934681C1C114FAA00F1F2A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7934681B1C114FAA00F1F2A4 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A1D5811CD727628B24988ED /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		793468111C114FAA00F1F2A4 /* OPassbookSimpleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPassbookSimpleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		793468151C114FAA00F1F2A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		793468171C114FAA00F1F2A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +53,8 @@
 		793468351C114FAA00F1F2A4 /* OPassbookSimpleAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OPassbookSimpleAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		793468391C114FAA00F1F2A4 /* OPassbookSimpleAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OPassbookSimpleAnimationUITests.m; sourceTree = "<group>"; };
 		7934683B1C114FAA00F1F2A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C09AE530F71817A6444A295 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C544C96DD590173C9B50951F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3353B3DEFF0499B970D8B2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				7934682D1C114FAA00F1F2A4 /* OPassbookSimpleAnimationTests */,
 				793468381C114FAA00F1F2A4 /* OPassbookSimpleAnimationUITests */,
 				793468121C114FAA00F1F2A4 /* Products */,
+				C45BDC9E6EC12087E8FA9A83 /* Pods */,
+				EE41A27CCC163AAF6DB402E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = OPassbookSimpleAnimationUITests;
 			sourceTree = "<group>";
 		};
+		C45BDC9E6EC12087E8FA9A83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D5811CD727628B24988ED /* Pods.debug.xcconfig */,
+				7C09AE530F71817A6444A295 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE41A27CCC163AAF6DB402E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C544C96DD590173C9B50951F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7934683E1C114FAA00F1F2A4 /* Build configuration list for PBXNativeTarget "OPassbookSimpleAnimation" */;
 			buildPhases = (
+				F15890F97F15C4E76DDA152B /* Check Pods Manifest.lock */,
 				7934680D1C114FAA00F1F2A4 /* Sources */,
 				7934680E1C114FAA00F1F2A4 /* Frameworks */,
 				7934680F1C114FAA00F1F2A4 /* Resources */,
+				9740B27F1E7D46E2B08FED6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +290,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9740B27F1E7D46E2B08FED6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F15890F97F15C4E76DDA152B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7934680D1C114FAA00F1F2A4 /* Sources */ = {
@@ -409,6 +468,7 @@
 		};
 		7934683F1C114FAA00F1F2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1D5811CD727628B24988ED /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OPassbookSimpleAnimation/Info.plist;
@@ -420,6 +480,7 @@
 		};
 		793468401C114FAA00F1F2A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C09AE530F71817A6444A295 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OPassbookSimpleAnimation/Info.plist;
@@ -496,6 +557,7 @@
 				793468401C114FAA00F1F2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		793468411C114FAA00F1F2A4 /* Build configuration list for PBXNativeTarget "OPassbookSimpleAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +566,7 @@
 				793468431C114FAA00F1F2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		793468441C114FAA00F1F2A4 /* Build configuration list for PBXNativeTarget "OPassbookSimpleAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +575,7 @@
 				793468461C114FAA00F1F2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
